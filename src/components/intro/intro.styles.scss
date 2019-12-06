@@ -1,7 +1,18 @@
 .intro {
-  img {
-    margin-left: -20px;
+  display: inline-flex;
+  background: darkblue;
+  .image-container {
+    padding: 30px;
     width: 50%;
+    border: 2px solid lightgrey;
+    img {
+      width: 100%;
+    }
+  }
+
+  .intro-container {
+    color: lightblue;
+    padding: 20px;
   }
 
 }
