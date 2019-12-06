@@ -1,9 +1,45 @@
+$screen-md-max: 909px;
+$screen-md-min: 768px;
+
+@mixin sm {
+  @media (max-width: #{$screen-md-min - 1}) {
+    @content;
+  }
+}
+
+// @mixin md {
+//   @media (min-width: #{$screen-md-min}) {
+//     @content;
+//   } 
+//   @media (max-width: #{$screen-md-max}) {
+//     @content;
+//   }
+// }
+
+// @mixin lg {
+//   @media (min-width: #{$screen-md-max + 1}) {
+//       @content;
+//   }
+// }
+
 .intro {
   display: inline-flex;
   background: darkblue;
+
+  @include sm {
+    display: block;
+    // border: 1px solid red;
+  }
+
   .image-container {
     padding: 30px;
     width: 50%;
+
+    @include sm {
+      padding: 30px;
+      width: 100%;
+    }
+
     border: 2px solid lightgrey;
     img {
       width: 100%;
