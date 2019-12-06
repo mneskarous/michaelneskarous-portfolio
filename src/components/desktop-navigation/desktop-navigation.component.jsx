@@ -9,7 +9,7 @@ const DesktopNavigation = (props) => (
       <a href="#skills">Skills</a>
       <a href="#Applications">Applications</a>
       <a href="#contact-form">Contact Me</a>
-      <a href="#resume">Resume</a>
+      <a href="Michael_Eskarous_Resume.pdf">Resume</a>
     </div>
     <div className="image-links">
       <a href="https://www.linkedin.com/in/michaelneskarous/">

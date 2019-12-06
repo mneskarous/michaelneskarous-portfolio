@@ -35,7 +35,7 @@ export default class MobileNavigation extends Component {
               <a href="#skills">Skills</a>
               <a href="#Applications">Applications</a>
               <a href="#contact-form">Contact Me</a>
-              <a href="#resume">Resume</a>
+              <a href="Michael_Eskarous_Resume.pdf">Resume</a>
             </div> ) : (
             null
           )}
