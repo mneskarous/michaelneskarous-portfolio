@@ -1,10 +1,9 @@
 import React from 'react';
 
-import './mobile-navigation.styles.scss'
+import './mobile-navigation.styles.scss';
 
-const DesktopNavigation = (props) => (
+const MobileNavigation = (props) => (
   <div className="navbar">
-    {/* Logo */}
     <div className="menu">
       <img src="menu.svg" alt="menu" />
     </div>
@@ -22,4 +21,4 @@ const DesktopNavigation = (props) => (
   </div>
 );
 
-export default DesktopNavigation;
+export default MobileNavigation;
