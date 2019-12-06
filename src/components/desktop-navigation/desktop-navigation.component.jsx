@@ -5,9 +5,9 @@ import './desktop-navigation.styles.scss';
 const DesktopNavigation = (props) => (
   <div className="navbar">
     <div className="text-links">
-      <a href="#about">About Me</a>
+      <a href="#about-me">About Me</a>
       <a href="#skills">Skills</a>
-      <a href="#Applications">Applications</a>
+      <a href="#applications">Applications</a>
       <a href="#contact-form">Contact Me</a>
       <a href="Michael_Eskarous_Resume.pdf">Resume</a>
     </div>

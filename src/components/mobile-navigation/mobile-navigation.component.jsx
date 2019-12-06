@@ -31,9 +31,9 @@ export default class MobileNavigation extends Component {
         <SlideDown className="vertical-text-links">
           {!hidden ? ( 
             <div >
-              <a href="#about">About Me</a>
+              <a href="#about-me">About Me</a>
               <a href="#skills">Skills</a>
-              <a href="#Applications">Applications</a>
+              <a href="#applications">Applications</a>
               <a href="#contact-form">Contact Me</a>
               <a href="Michael_Eskarous_Resume.pdf">Resume</a>
             </div> ) : (
