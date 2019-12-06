@@ -4,6 +4,8 @@
 
 import React from "react";
 
+import './contact-form.styles.scss';
+
 export default class ContactForm extends React.Component {
   constructor(props) {
     super(props);
@@ -21,7 +23,7 @@ export default class ContactForm extends React.Component {
         action="https://formspree.io/mzbzjpak"
         method="POST"
       >
-        <h2>Contact Me!</h2>
+        <h2 id="contact-form">Contact Me!</h2>
         <label>Email:</label>
         <input type="email" name="email" />
         <label>Subject:</label>
