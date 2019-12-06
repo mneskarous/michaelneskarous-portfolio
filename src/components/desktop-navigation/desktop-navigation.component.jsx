@@ -13,13 +13,13 @@ const DesktopNavigation = (props) => (
     </div>
     <div className="image-links">
       <a href="https://www.linkedin.com/in/michaelneskarous/">
-        <img src="linkedin.svg" alt="linkedin link" />
+        <img src="./images/linkedin.svg" alt="linkedin link" />
       </a>
       <a href="https://github.com/mneskarous">
-        <img src="github.svg" alt="github link" />
+        <img src="./images/github.svg" alt="github link" />
       </a>
       <a href="mailto:michaelneskarous@gmail.com">
-        <img src="email.svg" alt="email link" />
+        <img src="./images/email.svg" alt="email link" />
       </a>
     </div>
   </div>

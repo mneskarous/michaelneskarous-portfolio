@@ -26,7 +26,7 @@ export default class MobileNavigation extends Component {
     return (
       <div className="navbar">
         <div className="menu">
-          <img onClick={this.handleClick} src="menu.svg" alt="menu" />
+          <img onClick={this.handleClick} src="./images/menu.svg" alt="menu" />
         </div>
         <SlideDown className="vertical-text-links">
           {!hidden ? ( 
@@ -44,13 +44,13 @@ export default class MobileNavigation extends Component {
         </div>
         <div className="mobile-image-links">
           <a href="https://www.linkedin.com/in/michaelneskarous/">
-            <img src="linkedin.svg" alt="linkedin link" />
+            <img src="./images/linkedin.svg" alt="linkedin link" />
           </a>
           <a href="https://github.com/mneskarous">
-            <img src="github.svg" alt="github link" />
+            <img src="./images/github.svg" alt="github link" />
           </a>
           <a href="mailto:michaelneskarous@gmail.com">
-            <img src="email.svg" alt="email link" />
+            <img src="./images/email.svg" alt="email link" />
           </a>
         </div>
       </div>
