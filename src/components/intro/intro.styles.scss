@@ -7,28 +7,12 @@ $screen-md-min: 768px;
   }
 }
 
-// @mixin md {
-//   @media (min-width: #{$screen-md-min}) {
-//     @content;
-//   } 
-//   @media (max-width: #{$screen-md-max}) {
-//     @content;
-//   }
-// }
-
-// @mixin lg {
-//   @media (min-width: #{$screen-md-max + 1}) {
-//       @content;
-//   }
-// }
-
 .intro {
   display: inline-flex;
   background: darkblue;
 
   @include sm {
     display: block;
-    // border: 1px solid red;
   }
 
   .image-container {
