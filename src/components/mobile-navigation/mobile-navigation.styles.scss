@@ -22,6 +22,10 @@ $screen-md-min: 768px;
   }
 }
 
+.react-slidedown {
+  transition-duration: .5s;
+  transition-timing-function: ease-in-out;
+}
 
 .navbar {
   width: 100%;
@@ -32,6 +36,8 @@ $screen-md-min: 768px;
   justify-content: space-between;
   margin-bottom: 25px;
   background: lightblue;
+
+  
 
   @include md {
     height: 90px;
@@ -56,10 +62,9 @@ $screen-md-min: 768px;
 
   .vertical-text-links {
     position: absolute;
-    // display: table;
     top: 90px;
     left: 0;
-
+    
     a {
       display: block;
       width: 200px;

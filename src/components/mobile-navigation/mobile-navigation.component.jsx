@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import {SlideDown} from 'react-slidedown'
 
+import 'react-slidedown/lib/slidedown.css';
 import './mobile-navigation.styles.scss';
 
 export default class MobileNavigation extends Component {
@@ -26,17 +28,19 @@ export default class MobileNavigation extends Component {
         <div className="menu">
           <img onClick={this.handleClick} src="menu.svg" alt="menu" />
         </div>
+        <SlideDown className="vertical-text-links">
+          {!hidden ? ( 
+            <div >
+              <a href="#about">About Me</a>
+              <a href="#skills">Skills</a>
+              <a href="#Applications">Applications</a>
+              <a href="#contact-form">Contact Form</a>
+              <a href="#resume">Resume</a>
+            </div> ) : (
+            null
+          )}
+        </SlideDown>
         <div>
-        {!hidden ? ( 
-          <div className="vertical-text-links">
-            <a href="#about">About Me</a>
-            <a href="#skills">Skills</a>
-            <a href="#Applications">Applications</a>
-            <a href="#contact-form">Contact Form</a>
-            <a href="#resume">Resume</a>
-          </div> ) : (
-          null
-        )}
         </div>
         <div className="mobile-image-links">
           <a href="https://www.linkedin.com/in/michaelneskarous/">

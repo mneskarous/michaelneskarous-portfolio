@@ -10,7 +10,8 @@
     "react": "^16.12.0",
     "react-breakpoints": "^3.0.3",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0"
+    "react-scripts": "3.3.0",
+    "react-slidedown": "^2.4.5"
   },
   "scripts": {
     "start": "react-scripts start",
