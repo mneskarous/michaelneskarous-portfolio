@@ -8,7 +8,7 @@ const DesktopNavigation = (props) => (
       <a href="#about">About Me</a>
       <a href="#skills">Skills</a>
       <a href="#Applications">Applications</a>
-      <a href="#contact-form">Contact Form</a>
+      <a href="#contact-form">Contact Me</a>
       <a href="#resume">Resume</a>
     </div>
     <div className="image-links">
