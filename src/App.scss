@@ -22,6 +22,10 @@ $screen-md-min: 768px;
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
 }
