@@ -1,0 +1,22 @@
+.about-me {
+  .header-container {
+    text-align: center;
+    background: lightgrey;
+    
+    h2 {
+      border: 5px dotted black;
+      padding: 10px;
+      display: inline-block;
+      font-weight: 400;
+      font-size: 32px;
+    }
+  }
+
+  .text-container {
+    background: darkblue;
+    color: lightblue;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    padding: 25px 50px;
+  }
+}
