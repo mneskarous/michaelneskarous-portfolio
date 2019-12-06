@@ -1,0 +1,43 @@
+$screen-md-max: 909px;
+$screen-md-min: 768px;
+
+@mixin sm {
+  @media (max-width: #{$screen-md-min - 1}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  } 
+  @media (max-width: #{$screen-md-max}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$screen-md-max + 1}) {
+      @content;
+  }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+
+  @include md {
+    margin-top: 90px;
+  }
+
+  @include lg {
+    margin-top: 70px;
+  }
+
+}

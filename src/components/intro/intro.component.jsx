@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './intro.styles.scss';
+
 const Intro = () => (
   <div className="intro">
     <img className="portrait" src="./DSC_4122_small.jpg"  alt="Michael Eskarous" width="500"/>

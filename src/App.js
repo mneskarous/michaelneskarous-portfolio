@@ -7,7 +7,7 @@ import Skills from './components/skills/skills.component';
 import Applications from './components/applications/applications.component';
 import ContactForm from './components/contact-form/contact-form.component';
 
-import './App.css';
+import './App.scss';
 
 
 function App() {
