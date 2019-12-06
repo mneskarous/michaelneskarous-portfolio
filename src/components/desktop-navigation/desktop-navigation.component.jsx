@@ -4,7 +4,6 @@ import './desktop-navigation.styles.scss';
 
 const DesktopNavigation = (props) => (
   <div className="navbar">
-    {/* Logo */}
     <div className="text-links">
       <a href="#about">About Me</a>
       <a href="#skills">Skills</a>
