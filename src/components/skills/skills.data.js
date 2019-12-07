@@ -79,7 +79,7 @@ const SKILLS_DATA = [
   },
   {
     id: 14,
-    imageUrl: "./images/npm.png",
+    imageUrl: "./images/npm-2.svg",
     alt: "npm logo",
     answer: 'npm'
   },
