@@ -31,14 +31,12 @@ $screen-md-min: 768px;
   width: 100%;
   position: fixed;
   top: 0;
-  transition: top 0.7s;
+  transition: top 0.3s;
   height: 70px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
   background: lightblue;
-
-  
 
   @include md {
     height: 90px;
