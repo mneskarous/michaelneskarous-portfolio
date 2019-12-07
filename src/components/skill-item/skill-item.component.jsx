@@ -22,7 +22,6 @@ export default class SkillItem extends Component {
    const { hidden } = this.state;
    const { skill } = this.props;
     return (
-      <div>
         <div className="skill-container">
           <img src={skill.imageUrl} alt={skill.alt} onClick={this.handleClick}></img>
           {!hidden ? (
@@ -31,12 +30,6 @@ export default class SkillItem extends Component {
             null
           )}
         </div>
-      </div>
     );
   }
 }
-
-// const SkillItem = ({ skill, hidden, handleClick }) => (
-  
-// )
-
