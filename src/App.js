@@ -6,6 +6,7 @@ import AboutMe from './components/about-me/about-me.component';
 import Skills from './components/skills/skills.component';
 import Applications from './components/applications/applications.component';
 import ContactForm from './components/contact-form/contact-form.component';
+import Footer from './components/footer/footer.component';
 
 import './App.scss';
 
@@ -31,6 +32,9 @@ function App() {
         </div>
         <div className="contact-form-container">
           <ContactForm />
+        </div>
+        <div className="footer-container">
+          <Footer />
         </div>
       </div>
     </div>
