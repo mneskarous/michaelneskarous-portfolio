@@ -21,10 +21,27 @@ export default class MobileNavigation extends Component {
     });
   }
 
+  handleScroll = () => {
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-90px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  }
+
+  componentDidMount() {
+    this.handleScroll();
+  }
+
   render() {
     const { hidden } = this.state;
     return (
-      <div className="navbar">
+      <div id="navbar" className="navbar">
         <div className="menu">
           <img onClick={this.handleClick} src="./images/menu.svg" alt="menu" />
         </div>
