@@ -13,9 +13,8 @@ export default class MobileNavigation extends Component {
     }
   }
 
-  handleClick = event => {
+  handleClick = () => {
     const { hidden } = this.state;
-    event.preventDefault();
     this.setState({
       hidden: !hidden
     });
@@ -45,18 +44,18 @@ export default class MobileNavigation extends Component {
         <div className="menu">
           <img onClick={this.handleClick} src="./images/menu.svg" alt="menu" />
         </div>
-        <SlideDown className="vertical-text-links">
-          {!hidden ? ( 
-            <div >
-              <a href="#about-me">About Me</a>
-              <a href="#skills">Skills</a>
-              <a href="#applications">Applications</a>
-              <a href="#contact-form">Contact Me</a>
-              <a href="Michael_Eskarous_Resume.pdf">Resume</a>
-            </div> ) : (
-            null
-          )}
-        </SlideDown>
+          <SlideDown className="vertical-text-links">
+            {!hidden ? ( 
+              <div >
+                <a href="#about-me" onClick={this.handleClick}>About Me</a>
+                <a href="#skills" onClick={this.handleClick}>Skills</a>
+                <a href="#applications" onClick={this.handleClick}>Applications</a>
+                <a href="#contact-form" onClick={this.handleClick}>Contact Me</a>
+                <a href="Michael_Eskarous_Resume.pdf">Resume</a>
+              </div> ) : (
+              null
+            )}
+          </SlideDown>
         <div>
         </div>
         <div className="mobile-image-links">

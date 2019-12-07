@@ -4,8 +4,8 @@ import './about-me.styles.scss';
 
 const AboutMe = () => (
   <div className="about-me">
-    <div className="header-container">
-      <h2 id="about-me">About Me</h2>
+    <div id="about-me"className="header-container">
+      <h2>About Me</h2>
     </div>
     <div className="text-container">
       <p>
