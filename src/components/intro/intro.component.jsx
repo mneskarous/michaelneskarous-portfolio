@@ -8,7 +8,7 @@ const Intro = () => (
       <img className="portrait" src="./images/portrait.jpg"  alt="Michael Eskarous" />
     </div>
     <div className="intro-container">
-      <h2>Hi! I'm Mike and I'm a software engineer!</h2> 
+      <h2 className="animate-flicker ">Welcome to Michael Eskarous' Portfolio!</h2> 
     </div>
   </div>
 );
