@@ -24,11 +24,13 @@ export default class SkillItem extends Component {
     return (
         <div className="skill-container">
           <img src={skill.imageUrl} alt={skill.alt} onClick={this.handleClick}></img>
-          {!hidden ? (
-            <div className="answer">{skill.answer}</div>
-          ) : (
-            null
-          )}
+          <div className="answer-container">
+            {!hidden ? (
+              <div className="answer">{skill.answer}</div>
+            ) : (
+              null
+            )}
+          </div>
         </div>
     );
   }

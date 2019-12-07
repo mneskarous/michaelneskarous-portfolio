@@ -48,6 +48,12 @@ $screen-md-min: 768px;
     color: lightblue;
     text-align: center;
     border: 1px solid darkblue;
+    
+
+    h3 {
+      font-weight: 400;
+      font-size: 1.5em;
+    }
   }
 
   .skills-container {
@@ -56,16 +62,16 @@ $screen-md-min: 768px;
     grid-gap: 20px;
     background: darkblue;
     margin: 0 auto;
-    padding: 30px;
+    padding: 0 30px 30px 30px;
 
     @include sm {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      background: darkblue;
       // display: grid;
       // grid-template-columns: 1fr 1fr 1fr;
       // grid-gap: 5em;
-      background: darkblue;
     }
 
     
