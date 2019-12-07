@@ -18,21 +18,27 @@ export default class ContactForm extends React.Component {
   render() {
     const { status } = this.state;
     return (
-      <form
-        onSubmit={this.submitForm}
-        action="https://formspree.io/mzbzjpak"
-        method="POST"
-      >
-        <h2 id="contact-form">Contact Me!</h2>
-        <label>Email:</label>
-        <input type="email" name="email" />
-        <label>Subject:</label>
-        <input type="text" name="subject" />
-        <label>Message:</label>
-        <textarea type="text" name="message" />
-        {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
-        {status === "ERROR" && <p>Ooops! There was an error.</p>}
-      </form>
+      <div className="contact-form">
+        <div className="header-container">
+          <h2 id="contact-form">Contact Me</h2>
+        </div>
+        <div className="form-container">
+          <form
+            onSubmit={this.submitForm}
+            action="https://formspree.io/mzbzjpak"
+            method="POST"
+          >
+            <label>Email:</label>
+            <input type="email" name="email" />
+            <label>Subject:</label>
+            <input type="text" name="subject" />
+            <label>Message:</label>
+            <textarea type="text" name="message" />
+            {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
+            {status === "ERROR" && <p>Ooops! There was an error.</p>}
+          </form>
+        </div>
+      </div>
     );
   }
 
