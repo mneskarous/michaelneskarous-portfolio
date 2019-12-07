@@ -9,30 +9,37 @@ $screen-md-min: 768px;
 
 .intro {
   display: flex;
+  flex-direction: row;
   background: darkblue;
 
   @include sm {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   .image-container {
     padding: 30px;
+    margin-left: 30px;
     width: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    align-self: center;
 
     @include sm {
-      padding: 30px;
       width: 100%;
     }
 
-    border: 2px solid white;
+    
 
     img {
       width: 100%;
+      
     }
   }
 
   .intro-container {
-    
     color: lightblue;
     padding: 50px;
     display: flex;

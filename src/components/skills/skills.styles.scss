@@ -23,6 +23,12 @@ $screen-md-min: 768px;
 }
 
 .skills{
+
+  @include sm {
+    display: flex;
+    flex-direction: column;
+  }
+
   .header-container {
     text-align: center;
     background: lightgrey;
@@ -49,15 +55,17 @@ $screen-md-min: 768px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
     background: darkblue;
-    padding: 50px 50px 50px 50px;
+    margin: 0 auto;
+    padding: 30px;
 
     @include sm {
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 5em;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      // display: grid;
+      // grid-template-columns: 1fr 1fr 1fr;
+      // grid-gap: 5em;
       background: darkblue;
-      padding: 50px;
     }
 
     

@@ -1,4 +1,21 @@
+$screen-md-max: 909px;
+$screen-md-min: 768px;
+
+@mixin sm {
+  @media (max-width: #{$screen-md-min - 1}) {
+    @content;
+  }
+}
+
 .about-me {
+
+  @include sm {
+    display: flex;
+    flex-direction: column;
+    // margin: 0 auto;
+
+  }
+  
   .header-container {
     text-align: center;
     background: lightgrey;

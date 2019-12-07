@@ -31,7 +31,9 @@ $screen-md-min: 768px;
     margin-bottom: 50px;
 
     @include sm {
+      margin: 50px;
       margin-bottom: 0;
+      // border: 1px solid white;
     }
   }
 
