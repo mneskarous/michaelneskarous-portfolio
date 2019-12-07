@@ -1,0 +1,49 @@
+$screen-md-max: 909px;
+$screen-md-min: 768px;
+
+@mixin sm {
+  @media (max-width: #{$screen-md-min - 1}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  } 
+  @media (max-width: #{$screen-md-max}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$screen-md-max + 1}) {
+      @content;
+  }
+}
+
+.skill-container {
+  text-align: center;
+  margin: 0 auto;
+  img {
+    width: 75px;
+    cursor: pointer;
+    margin-bottom: 50px;
+
+    @include sm {
+      margin-bottom: 0;
+    }
+  }
+
+  .answer {
+    text-align: center;
+    color: lightblue;
+    border: 1px solid white;
+    margin-top: -40px;
+    @include sm {
+      margin-top: 10px;
+    }
+    padding: 10px;
+  }
+
+}

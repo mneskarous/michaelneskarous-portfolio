@@ -60,58 +60,7 @@ $screen-md-min: 768px;
       padding: 50px;
     }
 
-    .skill-container {
-      // border: 1px solid white;
-      text-align: center;
-      margin: 0 auto;
-      img {
-        width: 75px;
     
-        cursor: pointer;
-        margin-bottom: 50px;
-        
-  
-        @include sm {
-          margin-bottom: 0;
-        }
-  
-        &.react-logo {
-          width: 86px;
-        }
-  
-        &.redux-logo {
-          width: 79px;
-        }
-  
-        &.nodejs-logo {
-          width: 68px;
-        }
-  
-        &.mongodb-logo {
-          width: 75px;
-        }
-  
-        &.postgresql-logo {
-          width: 73px;
-        }
-  
-        &.npm-logo {
-          padding-top: 18px;
-        }
-  
-        &.webpack-logo {
-          width: 67px;
-        }
-      }
-
-      .answer {
-        text-align: center;
-        color: lightblue;
-        border: 1px solid white;
-        padding: 10px;
-      }
-
-    }
 
     
   }
