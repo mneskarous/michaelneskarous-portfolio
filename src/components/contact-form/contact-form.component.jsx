@@ -19,8 +19,8 @@ export default class ContactForm extends React.Component {
     const { status } = this.state;
     return (
       <div className="contact-form">
-        <div className="header-container">
-          <h2 id="contact-form">Contact Me</h2>
+        <div id="contact-form" className="header-container">
+          <h2>Contact Me</h2>
         </div>
         <div className="form-container">
           <form

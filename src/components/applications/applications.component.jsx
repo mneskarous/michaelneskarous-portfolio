@@ -3,8 +3,8 @@ import React from 'react';
 import './applications.styles.scss';
 
 const Applications = () => (
-  <div className="applications">
-    <h2 id="applications">Applications</h2>
+  <div id="applications" className="applications">
+    <h2>Applications</h2>
     <p>
 
     </p>

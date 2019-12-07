@@ -25,8 +25,8 @@ export default class Skills extends Component {
     const { skills } = this.state;
     return (
       <div className="skills">
-        <div className="header-container">
-          <h2 id="skills">Skills</h2>
+        <div id="skills" className="header-container">
+          <h2>Skills</h2>
         </div>
         <div className="instructions-container">
           <h3>Click on the icon for the name</h3>
