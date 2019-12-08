@@ -11,6 +11,7 @@ $screen-md-min: 768px;
   display: flex;
   flex-direction: row;
   background: darkblue;
+  border: 8px solid red;
 
   @include sm {
     display: flex;
@@ -20,7 +21,7 @@ $screen-md-min: 768px;
   .image-container {
     padding: 30px;
     margin-left: 30px;
-    width: 50%;
+    width: 80%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -28,10 +29,8 @@ $screen-md-min: 768px;
     align-self: center;
 
     @include sm {
-      width: 100%;
+      width: 60%;
     }
-
-    
 
     img {
       width: 100%;
