@@ -12,16 +12,14 @@ $screen-md-min: 768px;
   @include sm {
     display: flex;
     flex-direction: column;
-    // margin: 0 auto;
-
   }
   
   .header-container {
     text-align: center;
-    background: lightgrey;
+    background: white;
     
     h2 {
-      border: 5px dotted black;
+      border: 3px dotted black;
       padding: 10px;
       display: inline-block;
       font-weight: 400;
