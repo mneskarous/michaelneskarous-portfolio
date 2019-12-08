@@ -46,8 +46,10 @@ $screen-md-min: 768px;
       background: grey;
       color: lightblue;
       padding: 25px 50px;
+      border: 8px solid red;
+      
 
-      form {
+      .form {
         font-family: 'Open Sans', sans-serif;
         display: flex;
         flex-direction: column;
@@ -57,6 +59,7 @@ $screen-md-min: 768px;
         background: darkblue;
         color: lightblue;
         padding: 40px;
+        
 
         @include md {
           max-width: 90%;

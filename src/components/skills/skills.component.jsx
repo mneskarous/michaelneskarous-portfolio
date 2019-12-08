@@ -28,15 +28,17 @@ export default class Skills extends Component {
         <div id="skills" className="header-container">
           <h2>Skills</h2>
         </div>
-        <div className="instructions-container">
-          <h3>Click on the icon for the name</h3>
-        </div>
-        <div className="skills-container">
-          {
-            skills.map(skill => (
-              <SkillItem skill={skill} key={skill.id} />
-            ))
-          }
+        <div className="quiz-container">
+          <div className="instructions-container">
+            <h3>Click on the icon for the name</h3>
+          </div>
+          <div className="skills-container">
+            {
+              skills.map(skill => (
+                <SkillItem skill={skill} key={skill.id} />
+              ))
+            }
+          </div>
         </div>
       </div>
     )

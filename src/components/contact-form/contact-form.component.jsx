@@ -24,6 +24,7 @@ export default class ContactForm extends React.Component {
         </div>
         <div className="form-container">
           <form
+            className="form"
             onSubmit={this.submitForm}
             action="https://formspree.io/mzbzjpak"
             method="POST"

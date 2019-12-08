@@ -8,8 +8,11 @@ $screen-md-min: 768px;
 }
 
 .about-me {
+  margin: 0 auto;
+  width: 80%;
 
   @include sm {
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -28,6 +31,7 @@ $screen-md-min: 768px;
   }
 
   .text-container {
+    border: 8px solid red;
     background: darkblue;
     color: lightblue;
     font-size: 1.2em;
