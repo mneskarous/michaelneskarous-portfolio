@@ -1,0 +1,48 @@
+$screen-md-max: 883px;
+$screen-md-min: 768px;
+
+@mixin sm {
+  @media (max-width: #{$screen-md-min - 1}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  } 
+  @media (max-width: #{$screen-md-max}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$screen-md-max + 1}) {
+      @content;
+  }
+}
+
+.applications {
+  .header-container {
+    text-align: center;
+    background: white;
+    
+    h2 {
+      border: 3px dotted black;
+      padding: 10px;
+      display: inline-block;
+      font-weight: 400;
+      font-size: 32px;
+    }
+  }
+
+  .applications-container {
+    border: 8px solid red;
+    background: darkblue;
+    color: lightblue;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    padding: 25px 50px;
+  }
+
+}
