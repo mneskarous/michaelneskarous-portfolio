@@ -23,73 +23,73 @@ $screen-md-min: 768px;
 }
 
 .contact-form {
-    .header-container {
-      text-align: center;
-      background: white;
-      
-      h2 {
-        border: 3px dotted black;
-        padding: 10px;
-        display: inline-block;
-        font-weight: 400;
-        font-size: 32px;
-      }
+  .header-container {
+    text-align: center;
+    background: white;
+    
+    h2 {
+      border: 3px dotted black;
+      padding: 10px;
+      display: inline-block;
+      font-weight: 400;
+      font-size: 32px;
     }
-  
-    .form-container {
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    height: 550px;
+    background: grey;
+    color: lightblue;
+    padding: 25px 50px;
+    border: 8px solid red;
+    
+
+    .form {
+      font-family: 'Open Sans', sans-serif;
       display: flex;
       flex-direction: column;
       margin: 0 auto;
-      justify-content: center;
-      text-align: center;
-      height: 550px;
-      background: grey;
+      width: 100%;
+      max-width: 50%;
+      background: darkblue;
       color: lightblue;
-      padding: 25px 50px;
-      border: 8px solid red;
+      padding: 40px;
       
 
-      .form {
+      @include md {
+        max-width: 90%;
+      }
+
+      * {
+        padding: 5px;
+      }
+
+      textarea {
         font-family: 'Open Sans', sans-serif;
-        display: flex;
-        flex-direction: column;
+        height: 150px;
+      }
+
+      button {
+        display: block;
         margin: 0 auto;
-        width: 100%;
-        max-width: 50%;
+        margin-top: 20px;
+        width: 50%;
         background: darkblue;
         color: lightblue;
-        padding: 40px;
-        
-
-        @include md {
-          max-width: 90%;
-        }
-
-        * {
-          padding: 5px;
-        }
-
-        textarea {
-          font-family: 'Open Sans', sans-serif;
-          height: 150px;
-        }
-
-        button {
-          display: block;
-          margin: 0 auto;
-          margin-top: 20px;
-          width: 50%;
-          background: darkblue;
-          color: lightblue;
-          border: 2px solid lightblue;
-        }
-
-        button:hover {
-          background: lightblue;
-          color: darkblue;
-          border: 2px solid lightblue;
-        }
-
+        border: 2px solid lightblue;
       }
+
+      button:hover {
+        background: lightblue;
+        color: darkblue;
+        border: 2px solid lightblue;
+      }
+
     }
+  }
 }
