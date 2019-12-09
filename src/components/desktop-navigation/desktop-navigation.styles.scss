@@ -5,7 +5,7 @@ $medium-dark-blue: #0E307E;
 $dark-blue: #082463;
 $light-grey: #E0E0E0;
 
-$screen-md-max: 989px;
+$screen-md-max: 941px;
 $screen-md-min: 830px;
 
 @mixin sm {
@@ -30,10 +30,11 @@ $screen-md-min: 830px;
 }
 
 .desktop-navbar {
+  z-index: 10;
   width: 100%;
   position: fixed;
   top: 0;
-  transition: top 0.3s;
+  transition: top 0.7s;
   height: 70px;
   display: flex;
   justify-content: space-between;
@@ -56,9 +57,13 @@ $screen-md-min: 830px;
     text-align: center;
 
     a {
-      color: $light-blue;
-      font-size: 20px;
+      color: $light-grey;
+      font-size: 16px;
       margin: 10px 20px; 
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
   }

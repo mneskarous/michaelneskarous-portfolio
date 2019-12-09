@@ -17,8 +17,8 @@ function App() {
       <div className="navbar-container">
         <Navbar />
       </div>
-      <div className="content">
-        <div className="intro-container">
+      <div className="content" id="top">
+        <div className="intro-container" >
           <Intro />
         </div>
         <div className="about-me-container">
