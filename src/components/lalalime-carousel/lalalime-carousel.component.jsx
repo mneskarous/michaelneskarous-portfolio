@@ -22,8 +22,8 @@ const LalalimeCarousel = () => (
           <img className="image" src='./images/lalalime/FEC-Demo-Sort.gif' alt=" Lalalime sort demo" />
         </Slide>
       </Slider>
-      <ButtonBack className="prev-arrow">&#60;</ButtonBack>
-      <ButtonNext className="next-arrow">&#62;</ButtonNext>
+      <ButtonBack className="prev arrow">&#60;</ButtonBack>
+      <ButtonNext className="next arrow">&#62;</ButtonNext>
     </CarouselProvider>
   </div>
 );

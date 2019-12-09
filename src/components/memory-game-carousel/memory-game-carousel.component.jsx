@@ -22,8 +22,8 @@ const MemoryGameCarousel = () => (
           <img className="image" src='./images/memory-game/memory-game-demo-3.gif' alt="Memory Game demo 3" />
         </Slide>
       </Slider>
-      <ButtonBack className="prev-arrow">&#60;</ButtonBack>
-      <ButtonNext className="next-arrow">&#62;</ButtonNext>
+      <ButtonBack className="prev arrow">&#60;</ButtonBack>
+      <ButtonNext className="next arrow">&#62;</ButtonNext>
     </CarouselProvider>
   </div>
 );

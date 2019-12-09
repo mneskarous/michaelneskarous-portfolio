@@ -19,8 +19,8 @@ const AnthropologieCarousel = () => (
           <img className="image" src='./images/anthropolgie/five-services-get.png' alt="After horizontal scaling" />
         </Slide>
       </Slider>
-      <ButtonBack className="prev-arrow">&#60;</ButtonBack>
-      <ButtonNext className="next-arrow">&#62;</ButtonNext>
+      <ButtonBack className="prev arrow">&#60;</ButtonBack>
+      <ButtonNext className="next arrow">&#62;</ButtonNext>
     </CarouselProvider>
   </div>
 );
