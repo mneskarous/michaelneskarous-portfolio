@@ -80,15 +80,6 @@ $screen-md-min: 830px;
 
       .application-body {
 
-        .application-image-container {
-          @include sm {
-            width: 90%;
-            height: auto;
-            margin: 0 auto;
-          }
-
-        }
-
         .carousel-container {
           padding: 0 40px;
         }

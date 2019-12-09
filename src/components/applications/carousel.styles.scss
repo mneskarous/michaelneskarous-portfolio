@@ -5,6 +5,30 @@ $medium-dark-blue: #0E307E;
 $dark-blue: #082463;
 $light-grey: #E0E0E0;
 
+$screen-md-max: 941px;
+$screen-md-min: 830px;
+
+@mixin sm {
+  @media (max-width: #{$screen-md-min - 1}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  } 
+  @media (max-width: #{$screen-md-max}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$screen-md-max + 1}) {
+      @content;
+  }
+}
+
 .carousel-container {
 
   .carousel {
@@ -21,6 +45,17 @@ $light-grey: #E0E0E0;
 
     }
     
+  }
+
+  .portrait-aspect {
+    width: 60%;
+
+    @include sm {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+
   }
 
   .arrow {

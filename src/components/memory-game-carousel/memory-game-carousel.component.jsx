@@ -11,7 +11,7 @@ const MemoryGameCarousel = () => (
       naturalSlideHeight={109}
       totalSlides={3}
     >
-      <Slider className="carousel">
+      <Slider className="portrait-aspect carousel">
         <Slide className="image-container" index={0}>
           <img className="image" src='./images/memory-game/memory-game-demo-1.gif' alt="Memory Game demo 1"/>
         </Slide>
