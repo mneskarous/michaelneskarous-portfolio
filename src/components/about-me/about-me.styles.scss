@@ -22,18 +22,18 @@ $screen-md-min: 768px;
     background: white;
     
     h2 {
-      border: 3px dotted black;
-      padding: 10px;
+      border-bottom: 3px solid black;
       display: inline-block;
       font-weight: 400;
       font-size: 32px;
     }
+
   }
 
   .text-container {
-    border: 8px solid red;
-    background: darkblue;
-    color: lightblue;
+    border: 8px solid #3759A8;
+    background: #082463;
+    color: white;
     font-size: 1.2em;
     line-height: 1.5em;
     padding: 25px 50px;
