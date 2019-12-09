@@ -1,3 +1,10 @@
+$light-blue: #5775BA;
+$light-medium-blue: #3759A8;
+$medium-blue: #1741A1;
+$medium-dark-blue: #0E307E;
+$dark-blue: #082463;
+$light-grey: #E0E0E0;
+
 $screen-md-max: 883px;
 $screen-md-min: 768px;
 
@@ -23,13 +30,20 @@ $screen-md-min: 768px;
 }
 
 .contact-form {
+  margin: 0 auto;
+  width: 80%;
+
+  @include sm {
+    width: 100%;
+  }
+
   .header-container {
     text-align: center;
-    background: white;
+    background: $light-grey;
     
     h2 {
-      border: 3px dotted black;
-      padding: 10px;
+      border-bottom: 3px solid $dark-blue;
+      color: $dark-blue;
       display: inline-block;
       font-weight: 400;
       font-size: 32px;
@@ -43,10 +57,10 @@ $screen-md-min: 768px;
     justify-content: center;
     text-align: center;
     height: 550px;
-    background: grey;
-    color: lightblue;
+    background: $dark-blue;
+    color: $medium-blue;
     padding: 25px 50px;
-    border: 8px solid red;
+    border: 8px solid $light-medium-blue;
     
 
     .form {
@@ -55,9 +69,10 @@ $screen-md-min: 768px;
       flex-direction: column;
       margin: 0 auto;
       width: 100%;
-      max-width: 50%;
-      background: darkblue;
-      color: lightblue;
+      background: $medium-dark-blue;
+      color: $light-grey;
+      border: 1px solid $medium-dark-blue;
+      border-radius: 10px;
       padding: 40px;
       
 
@@ -79,15 +94,17 @@ $screen-md-min: 768px;
         margin: 0 auto;
         margin-top: 20px;
         width: 50%;
-        background: darkblue;
-        color: lightblue;
-        border: 2px solid lightblue;
+        background: $medium-dark-blue;
+        color: $light-grey;
+        border: 2px solid $light-grey;
+        outline: none;
       }
 
       button:hover {
-        background: lightblue;
-        color: darkblue;
-        border: 2px solid lightblue;
+        background: $light-grey;
+        color: $medium-dark-blue;
+        border: 2px solid $light-grey;
+        cursor: pointer;
       }
 
     }
