@@ -24,7 +24,7 @@ export default class MobileNavigation extends Component {
     var prevScrollPos = window.pageYOffset;
     window.onscroll = function() {
       var currentScrollPos = window.pageYOffset;
-      if (prevScrollPos > currentScrollPos) {
+      if ((prevScrollPos > currentScrollPos) || (currentScrollPos <= 0)) {
         document.getElementById("navbar").style.top = "0";
       } else {
         document.getElementById("navbar").style.top = "-90px";
