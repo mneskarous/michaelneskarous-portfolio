@@ -56,7 +56,7 @@ $screen-md-min: 768px;
     .application {
       display: block;
       text-align: center;
-      background: white;
+      background: black;
       border: 1px solid black;
       border-radius: 10px;
       margin: 30px 10px;
@@ -68,15 +68,19 @@ $screen-md-min: 768px;
 
       .application-body {
 
+        .application-image-container {
+          @include sm {
+            width: 90%;
+            height: auto;
+            margin: 0 auto;
+          }
+
+        }
+
         .carousel-container {
           padding: 40px;
         }
         
-
-        .arrow {
-          width: 50px;
-          cursor: pointer;
-        }
   
         .feature-list, p {
           text-align: left;
