@@ -34,8 +34,8 @@ export default class Applications extends Component {
               HTML5 / CSS3 / React / RESTful API / Node / Express / MongoDB / Mongoose / Git / npm / webpack
             </div>
             <div className="application-body">
-              <div className="application-image">
-                <img src="./images/fitness-tracker/MVP-Demo-1.gif" alt="MVP Demo"/>
+              <div className="application-image-container">
+                <img className="application-image-container" src="./images/fitness-tracker/MVP-Demo-1.gif" alt="MVP Demo"/>
               </div>
               <ul className="feature-list">
                 <li>Contributed to the planning of functionality in addition to component structure and visual style of application</li>

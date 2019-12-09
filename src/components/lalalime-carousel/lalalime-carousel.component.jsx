@@ -18,8 +18,8 @@ export default class LalalimeCarousel extends Component {
               <Slide className="image-container" index={1}><img className="image" src='./images/lalalime/FEC-demo-popups.gif' alt="Lalalime popups demo" /></Slide>
               <Slide className="image-container"index={2}><img className="image" src='./images/lalalime/FEC-Demo-Sort.gif' alt=" Lalalime sort demo" /></Slide>
             </Slider>
-            <ButtonBack><img className="prev-arrow" src='./images/prev.svg' alt="Previous Button" /></ButtonBack>
-            <ButtonNext><img className="next-arrow" src='./images/next.svg' alt="Next Button" /></ButtonNext>
+            <ButtonBack className="prev-arrow">&#60;</ButtonBack>
+            <ButtonNext className="next-arrow">&#62;</ButtonNext>
           </CarouselProvider>
         </div>
       )

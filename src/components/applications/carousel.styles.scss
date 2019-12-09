@@ -16,13 +16,27 @@
   }
 
   .prev-arrow {
-    width: 2em;
-    margin: 20px 80px 0 0; 
-
+    font-size: 300%;
+    font-family: inherit;
+    font-weight: 300;
+    border: none;
+    padding: 0;
+    background: black;
+    color: lightblue;
+    margin: 0 2rem 0 0;
+    outline: none;
   }
+
   .next-arrow {
-    width: 2em;
-    margin: 20px 0 0 80px; 
+    font-size: 300%;
+    font-family: inherit;
+    font-weight: 300;
+    border: none;
+    padding: 0;
+    background: black;
+    color: lightblue;
+    margin: 0 0 0 2rem;
+    outline: none;
   }
   
 }

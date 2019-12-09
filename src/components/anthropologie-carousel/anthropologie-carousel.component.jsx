@@ -17,8 +17,8 @@ export default class AnthropologieCarousel extends Component {
               <Slide className="image-container" index={0}><img className="image" src='./images/anthropolgie/one-service-get.png' alt="Before horizontal scaling"/></Slide>
               <Slide className="image-container" index={1}><img className="image" src='./images/anthropolgie/five-services-get.png' alt="After horizontal scaling" /></Slide>
             </Slider>
-            <ButtonBack><img className="prev-arrow" src='./images/prev.svg' alt="Previous Button" /></ButtonBack>
-            <ButtonNext><img className="next-arrow" src='./images/next.svg' alt="Next Button" /></ButtonNext>
+            <ButtonBack className="prev-arrow">&#60;</ButtonBack>
+            <ButtonNext className="next-arrow">&#62;</ButtonNext>
           </CarouselProvider>
         </div>
       )
