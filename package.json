@@ -2,7 +2,7 @@
   "name": "michaelneskarous-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mneskarous.github.io/michaelneskarous-portfolio",
+  "homepage": "https://michaeneskarous.dev",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
