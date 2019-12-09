@@ -1,3 +1,10 @@
+$light-blue: #5775BA;
+$light-medium-blue: #3759A8;
+$medium-blue: #1741A1;
+$medium-dark-blue: #0E307E;
+$dark-blue: #082463;
+$light-grey: #E0E0E0;
+
 $screen-md-max: 883px;
 $screen-md-min: 768px;
 
@@ -23,15 +30,6 @@ $screen-md-min: 768px;
 }
 
 .navbar {
-  width: 100%;
-  position: fixed;
-  height: 70px;
-  top: 0;
-  transition: top 0.7s;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 25px;
-  background: lightblue;
 
   .text-links {
     width: 675px;
@@ -41,7 +39,7 @@ $screen-md-min: 768px;
     text-align: center;
 
     a {
-      color: darkblue;
+      color: $light-blue;
       font-size: 20px;
       margin: 10px 20px; 
     }
