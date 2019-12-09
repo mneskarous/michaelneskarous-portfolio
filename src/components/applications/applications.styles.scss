@@ -43,6 +43,42 @@ $screen-md-min: 768px;
     font-size: 1.2em;
     line-height: 1.5em;
     padding: 25px 50px;
-  }
 
+    .application {
+      display: block;
+      text-align: center;
+      background: white;
+      border: 1px solid black;
+      border-radius: 10px;
+      margin: 10px 0;
+
+      .application-title {
+        padding: 15px;
+        text-align: left;
+      }
+
+      .application-body {
+
+        .carousel-container {
+          padding: 40px;
+        }
+        
+
+        .arrow {
+          width: 50px;
+          cursor: pointer;
+        }
+  
+        .feature-list, p {
+          text-align: left;
+        }
+
+        .undecorated{
+          list-style-type: none;
+        }
+
+      }
+    }
+  }
 }
+
