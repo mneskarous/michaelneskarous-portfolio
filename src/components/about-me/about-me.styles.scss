@@ -40,11 +40,12 @@ $screen-md-min: 768px;
   }
 
   .text-container {
-    border: 8px solid #3759A8;
+    border: 8px solid $light-medium-blue;
     background: $dark-blue;
     color: $light-grey;
     font-size: 1.2em;
     line-height: 1.5em;
     padding: 25px 50px;
   }
+  
 }
