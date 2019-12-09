@@ -1,3 +1,10 @@
+$light-blue: #5775BA;
+$light-medium-blue: #3759A8;
+$medium-blue: #1741A1;
+$medium-dark-blue: #0E307E;
+$dark-blue: #082463;
+$light-grey: #E0E0E0;
+
 $screen-md-max: 883px;
 $screen-md-min: 768px;
 
@@ -34,36 +41,41 @@ $screen-md-min: 768px;
   
   .header-container {
     text-align: center;
-    background: white;
+    background: $light-grey;
     
     h2 {
-      border: 3px dotted black;
-      padding: 10px;
+      border-bottom: 3px solid $dark-blue;
+      color: $dark-blue;
       display: inline-block;
       font-weight: 400;
       font-size: 32px;
     }
+
   }
 
   .applications-container {
-    border: 8px solid red;
-    background: darkblue;
-    color: lightblue;
-    font-size: 1.2em;
+    border: 8px solid $light-medium-blue;
+    background: $dark-blue;
+    color: $light-grey;
     line-height: 1.5em;
     padding: 25px 50px;
 
     .application {
       display: block;
       text-align: center;
-      background: black;
-      border: 1px solid black;
+      background: $medium-dark-blue;
+      border: 1px solid $medium-dark-blue;
       border-radius: 10px;
       margin: 30px 10px;
 
       .application-title {
-        padding: 15px;
+        font-size: 1.2em;
+        padding: 10px 20px;
         text-align: left;
+      }
+
+      .application-tech {
+        padding: 20px;
       }
 
       .application-body {
@@ -78,12 +90,13 @@ $screen-md-min: 768px;
         }
 
         .carousel-container {
-          padding: 40px;
+          padding: 0 40px;
         }
         
-  
-        .feature-list, p {
+        .feature-list {
           text-align: left;
+          margin-left: 20px;
+          padding: 20px;
         }
 
         .undecorated{
@@ -91,7 +104,10 @@ $screen-md-min: 768px;
         }
 
       }
+
     }
+
   }
+  
 }
 
