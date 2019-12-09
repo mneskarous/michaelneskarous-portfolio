@@ -7,18 +7,20 @@ import './anthropologie-carousel.styles.scss';
 export default class AnthropologieCarousel extends Component {
     render() {
       return(
-        <CarouselProvider
-          naturalSlideWidth={100}
-          naturalSlideHeight={125}
-          totalSlides={2}
-        >
-          <Slider>
-            <Slide index={0}><img src='./images/anthropolgie/one-service-get.png' alt="Before horizontal scaling"/></Slide>
-            <Slide index={1}><img src='./images/anthropolgie/five-services-get.png' alt="After horizontal scaling" /></Slide>
-          </Slider>
-          <ButtonBack>Back</ButtonBack>
-          <ButtonNext>Next</ButtonNext>
-        </CarouselProvider>
+        <div className="carousel-container">
+          <CarouselProvider
+            naturalSlideWidth={150}
+            naturalSlideHeight={100}
+            totalSlides={2}
+          >
+            <Slider className="carousel">
+              <Slide className="image-container" index={0}><img className="image" src='./images/anthropolgie/one-service-get.png' alt="Before horizontal scaling"/></Slide>
+              <Slide className="image-container" index={1}><img className="image" src='./images/anthropolgie/five-services-get.png' alt="After horizontal scaling" /></Slide>
+            </Slider>
+            <ButtonBack><img className="prev-arrow" src='./images/prev.svg' alt="Previous Button" /></ButtonBack>
+            <ButtonNext><img className="next-arrow" src='./images/next.svg' alt="Next Button" /></ButtonNext>
+          </CarouselProvider>
+        </div>
       )
     }
 }
