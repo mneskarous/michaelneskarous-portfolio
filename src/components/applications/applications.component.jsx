@@ -56,7 +56,7 @@ const Applications = () => (
           <AnthropologieCarousel />
           <ul className="feature-list">
             <li>Benchmarked and optimized SQL and NoSQL databases to produce querying times less than 6ms using B-tree indexing and tuning</li>
-            <li>Horizontally-scaled to five AWS t2.micro EC2 instances with NGINX load-balancer using least connections technique to increase throughput 3.4x under conditions of latency less than 70ms and an error rate of 0.0%</li>
+            <li>Horizontally-scaled to five AWS t2.micro EC2 instances with NGINX load-balancer using least connections technique to increase throughput 5.1x under conditions of latency less than 70ms and an error rate of 0.0%</li>
           </ul>
         </div>
       </div>
