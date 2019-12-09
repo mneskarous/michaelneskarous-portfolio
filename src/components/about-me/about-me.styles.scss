@@ -1,3 +1,10 @@
+$light-blue: #5775BA;
+$light-medium-blue: #3759A8;
+$medium-blue: #1741A1;
+$medium-dark-blue: #0E307E;
+$dark-blue: #082463;
+$light-grey: #E0E0E0;
+
 $screen-md-max: 909px;
 $screen-md-min: 768px;
 
@@ -10,6 +17,7 @@ $screen-md-min: 768px;
 .about-me {
   margin: 0 auto;
   width: 80%;
+  background: $light-grey;
 
   @include sm {
     width: 100%;
@@ -19,10 +27,11 @@ $screen-md-min: 768px;
   
   .header-container {
     text-align: center;
-    background: white;
+    background: $light-grey;
+    color: $dark-blue;
     
     h2 {
-      border-bottom: 3px solid black;
+      border-bottom: 3px solid $dark-blue;
       display: inline-block;
       font-weight: 400;
       font-size: 32px;
@@ -32,8 +41,8 @@ $screen-md-min: 768px;
 
   .text-container {
     border: 8px solid #3759A8;
-    background: #082463;
-    color: white;
+    background: $dark-blue;
+    color: $light-grey;
     font-size: 1.2em;
     line-height: 1.5em;
     padding: 25px 50px;
