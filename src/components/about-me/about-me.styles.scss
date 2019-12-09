@@ -5,8 +5,8 @@ $medium-dark-blue: #0E307E;
 $dark-blue: #082463;
 $light-grey: #E0E0E0;
 
-$screen-md-max: 909px;
-$screen-md-min: 768px;
+$screen-md-max: 989px;
+$screen-md-min: 830px;
 
 @mixin sm {
   @media (max-width: #{$screen-md-min - 1}) {

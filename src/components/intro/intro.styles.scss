@@ -5,8 +5,8 @@ $medium-dark-blue: #0E307E;
 $dark-blue: #082463;
 $light-grey: #E0E0E0;
 
-$screen-md-max: 909px;
-$screen-md-min: 768px;
+$screen-md-max: 989px;
+$screen-md-min: 830px;
 
 @mixin sm {
   @media (max-width: #{$screen-md-min - 1}) {
@@ -14,9 +14,25 @@ $screen-md-min: 768px;
   }
 }
 
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  } 
+  @media (max-width: #{$screen-md-max}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$screen-md-max + 1}) {
+      @content;
+  }
+}
+
 .intro {
   display: flex;
   flex-direction: row;
+  margin-top: 70px;
   background: $dark-blue;
   border: 8px solid $light-medium-blue;
 
@@ -24,6 +40,15 @@ $screen-md-min: 768px;
     display: flex;
     flex-direction: column;
   }
+
+  @include md {
+    margin-top: 90px;
+  }
+
+  @include lg {
+    margin-top: 70px;
+  }
+  
 
   .image-container {
     padding: 30px;
@@ -35,14 +60,10 @@ $screen-md-min: 768px;
     margin: 0 auto;
     align-self: center;
 
-    @include sm {
-      width: 60%;
-    }
-
     img {
       width: 100%;
-      
     }
+
   }
 
   .intro-container {
@@ -62,6 +83,10 @@ $screen-md-min: 768px;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
+
+    @include sm {
+      margin-top: -60px;
+    }
   }
 
 }

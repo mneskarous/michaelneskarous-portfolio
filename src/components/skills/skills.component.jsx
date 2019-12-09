@@ -26,7 +26,7 @@ export default class Skills extends Component {
     return (
       <div className="skills">
         <div id="skills" className="header-container">
-          <h2>Skills</h2>
+          <h2>Technical Skills</h2>
         </div>
         <div className="quiz-container">
           <div className="instructions-container">

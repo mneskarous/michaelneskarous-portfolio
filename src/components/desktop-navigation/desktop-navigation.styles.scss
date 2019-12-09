@@ -5,8 +5,8 @@ $medium-dark-blue: #0E307E;
 $dark-blue: #082463;
 $light-grey: #E0E0E0;
 
-$screen-md-max: 883px;
-$screen-md-min: 768px;
+$screen-md-max: 989px;
+$screen-md-min: 830px;
 
 @mixin sm {
   @media (max-width: #{$screen-md-min - 1}) {
@@ -29,10 +29,27 @@ $screen-md-min: 768px;
   }
 }
 
-.navbar {
+.desktop-navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  transition: top 0.3s;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  background: $dark-blue;
+
+    @include md {
+      height: 90px;
+    }
+
+    @include lg {
+      height: 70px;
+    }
 
   .text-links {
-    width: 675px;
+    width: 725px;
     padding-top: 10px;
     margin-left: 20px;
     display: inline-flex;

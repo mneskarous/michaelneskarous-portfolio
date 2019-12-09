@@ -40,7 +40,7 @@ export default class MobileNavigation extends Component {
   render() {
     const { hidden } = this.state;
     return (
-      <div id="navbar" className="navbar">
+      <div id="navbar"  className="mobile-navbar">
         <div className="menu">
           <img onClick={this.handleClick} src="./images/menu.svg" alt="menu" />
         </div>
@@ -48,7 +48,7 @@ export default class MobileNavigation extends Component {
             {!hidden ? ( 
               <div >
                 <a href="#about-me" onClick={this.handleClick}>About Me</a>
-                <a href="#skills" onClick={this.handleClick}>Skills</a>
+                <a href="#skills" onClick={this.handleClick}>Technical Skills</a>
                 <a href="#applications" onClick={this.handleClick}>Applications</a>
                 <a href="#contact-form" onClick={this.handleClick}>Contact Me</a>
                 <a href="Michael_Eskarous_Resume.pdf">Resume</a>

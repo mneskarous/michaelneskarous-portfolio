@@ -23,10 +23,10 @@ export default class DesktopNavigation extends Component {
 
   render() {
     return (
-      <div id="navbar" className="navbar">
+      <div id="navbar"  className="desktop-navbar" >
         <div className="text-links">
           <a href="#about-me">About Me</a>
-          <a href="#skills">Skills</a>
+          <a href="#skills">Technical Skills</a>
           <a href="#applications">Applications</a>
           <a href="#contact-form">Contact Me</a>
           <a href="Michael_Eskarous_Resume.pdf">Resume</a>
