@@ -2,6 +2,7 @@ import React from 'react';
 import AnthropologieCarousel from '../anthropologie-carousel/anthropologie-carousel.component';
 import LalalimeCarousel from '../lalalime-carousel/lalalime-carousel.component';
 import MemoryGameCarousel from '../memory-game-carousel/memory-game-carousel.component';
+import FitnessTrackerCarousel from '../fitness-tracker-carousel/fitness-tracker-carousel.component';
 
 import './applications.styles.scss';
 
@@ -19,9 +20,7 @@ const Applications = () => (
           HTML5 / CSS3 / React / RESTful API / Node / Express / MongoDB / Mongoose / Git / npm / webpack
         </div>
         <div className="application-body">
-          <div className="application-image-container">
-            <img className="application-image-container" src="./images/fitness-tracker/MVP-Demo-1.gif" alt="MVP Demo"/>
-          </div>
+          <FitnessTrackerCarousel />
           <ul className="feature-list">
             <li>Contributed to the planning of functionality in addition to component structure and visual style of application</li>
             <li>Constructed database schema to persist data</li>
