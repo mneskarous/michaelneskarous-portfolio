@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import './lalalime-carousel.styles.scss';
+import '../applications/carousel.styles.scss';
 
 export default class LalalimeCarousel extends Component {
     render() {

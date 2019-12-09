@@ -23,6 +23,15 @@ $screen-md-min: 768px;
 }
 
 .applications {
+  margin: 0 auto;
+  width: 80%;
+
+  @include sm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
   .header-container {
     text-align: center;
     background: white;
@@ -50,7 +59,7 @@ $screen-md-min: 768px;
       background: white;
       border: 1px solid black;
       border-radius: 10px;
-      margin: 10px 0;
+      margin: 30px 10px;
 
       .application-title {
         padding: 15px;
