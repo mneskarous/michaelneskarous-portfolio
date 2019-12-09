@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
 import AnthropologieCarousel from '../anthropologie-carousel/anthropologie-carousel.component';
-
-// import { IMAGE_DATA } from './images.data';
-// import arrowNext from '../../assets/next.svg';
-// import arrowPrev from '../../assets/prev.svg';
+import LalalimeCarousel from '../lalalime-carousel/lalalime-carousel.component';
+import MemoryGameCarousel from '../memory-game-carousel/memory-game-carousel.component';
 
 import './applications.styles.scss';
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
 
 export default class Applications extends Component {
   constructor(props) {
@@ -57,7 +53,7 @@ export default class Applications extends Component {
             </div>
             <div className="application-body">
               <div className="carousel-container">
-              
+                <LalalimeCarousel />
               </div>
               <ul className="feature-list">
                 <li>Utilized React state and conditional rendering to create dropdown menus to filter and sort reviews and popups containing a user's profile and a review feedback form</li>
@@ -92,7 +88,7 @@ export default class Applications extends Component {
             </div>
             <div className="application-body">
               <div className="carousel-container">
-
+                <MemoryGameCarousel />
               </div>
               <ul className="undecorated feature-list">
                 <li>Implemented a move counter, timer, a restart button, a star rating that decreases as a specific number of moves are reached, and a popup scoreboard that displays game statistics and congratulates the player for completing the game</li>

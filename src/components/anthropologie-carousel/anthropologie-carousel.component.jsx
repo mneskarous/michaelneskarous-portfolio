@@ -4,7 +4,6 @@ import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-re
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import './anthropologie-carousel.styles.scss';
 
-
 export default class AnthropologieCarousel extends Component {
     render() {
       return(
@@ -14,14 +13,12 @@ export default class AnthropologieCarousel extends Component {
           totalSlides={2}
         >
           <Slider>
-            <Slide index={0}><img src='./images/anthropolgie/one-service-get.png' alt=""/></Slide>
-            <Slide index={1}><img src='./images/anthropolgie/five-services-get.png' alt="" /></Slide>
+            <Slide index={0}><img src='./images/anthropolgie/one-service-get.png' alt="Before horizontal scaling"/></Slide>
+            <Slide index={1}><img src='./images/anthropolgie/five-services-get.png' alt="After horizontal scaling" /></Slide>
           </Slider>
           <ButtonBack>Back</ButtonBack>
           <ButtonNext>Next</ButtonNext>
         </CarouselProvider>
       )
-    
     }
-  
 }
