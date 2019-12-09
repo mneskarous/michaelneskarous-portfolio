@@ -1,3 +1,10 @@
+$light-blue: #5775BA;
+$light-medium-blue: #3759A8;
+$medium-blue: #1741A1;
+$medium-dark-blue: #0E307E;
+$dark-blue: #082463;
+$light-grey: #E0E0E0;
+
 $screen-md-max: 883px;
 $screen-md-min: 768px;
 
@@ -36,7 +43,7 @@ $screen-md-min: 768px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
-  background: lightblue;
+  background: $dark-blue;
 
   @include md {
     height: 90px;
@@ -68,17 +75,17 @@ $screen-md-min: 768px;
       display: block;
       width: 200px;
       padding: 10px;
-      border: 1px solid darkblue;
+      border: 1px solid $dark-blue;
       border-collapse: collapse;
-      background: lightblue;
-      color: darkblue;
+      background: $light-blue;
+      color: $dark-blue;
       font-size: 20px;
     }
 
     a:hover {
       cursor: pointer;
-      background: darkblue;
-      color: lightblue;
+      background: $dark-blue;
+      color: $light-blue;
     }
 
   }
