@@ -7,19 +7,21 @@ import './lalalime-carousel.styles.scss';
 export default class LalalimeCarousel extends Component {
     render() {
       return(
-        <CarouselProvider
-          naturalSlideWidth={100}
-          naturalSlideHeight={125}
-          totalSlides={3}
-        >
-          <Slider>
-            <Slide index={0}><img src='./images/lalalime/FEC-demo-filter.gif' alt="Lalalime filter demo"/></Slide>
-            <Slide index={1}><img src='./images/lalalime/FEC-demo-popups.gif' alt="Lalalime popups demo" /></Slide>
-            <Slide index={2}><img src='./images/lalalime/FEC-Demo-Sort.gif' alt=" Lalalime sort demo" /></Slide>
-          </Slider>
-          <ButtonBack>Back</ButtonBack>
-          <ButtonNext>Next</ButtonNext>
-        </CarouselProvider>
+        <div className="carousel-container">
+          <CarouselProvider
+            naturalSlideWidth={80}
+            naturalSlideHeight={50}
+            totalSlides={3}
+          >
+            <Slider className="carousel">
+              <Slide className="image-container" index={0}><img className="image" src='./images/lalalime/FEC-demo-filter.gif' alt="Lalalime filter demo"/></Slide>
+              <Slide className="image-container" index={1}><img className="image" src='./images/lalalime/FEC-demo-popups.gif' alt="Lalalime popups demo" /></Slide>
+              <Slide className="image-container"index={2}><img className="image" src='./images/lalalime/FEC-Demo-Sort.gif' alt=" Lalalime sort demo" /></Slide>
+            </Slider>
+            <ButtonBack><img className="prev-arrow" src='./images/prev.svg' alt="Previous Button" /></ButtonBack>
+            <ButtonNext><img className="next-arrow" src='./images/next.svg' alt="Next Button" /></ButtonNext>
+          </CarouselProvider>
+        </div>
       )
     
     }
