@@ -10,7 +10,7 @@ export default class AnthropologieCarousel extends Component {
         <div className="carousel-container">
           <CarouselProvider
             naturalSlideWidth={150}
-            naturalSlideHeight={100}
+            naturalSlideHeight={107}
             totalSlides={2}
           >
             <Slider className="carousel">

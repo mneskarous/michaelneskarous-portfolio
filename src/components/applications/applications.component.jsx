@@ -52,9 +52,7 @@ export default class Applications extends Component {
             HTML5 / CSS3 / React / ReactCSSTransitionGroup API / jQuery / RESTful API / Node / Express / MongoDB / Mongoose / Jest / Enzyme / Git / npm / webpack
             </div>
             <div className="application-body">
-              <div className="carousel-container">
-                <LalalimeCarousel />
-              </div>
+              <LalalimeCarousel />
               <ul className="feature-list">
                 <li>Utilized React state and conditional rendering to create dropdown menus to filter and sort reviews and popups containing a user's profile and a review feedback form</li>
                 <li>Constructed a proxy server to utilize service-oriented architecture to render full product page</li>
@@ -70,9 +68,7 @@ export default class Applications extends Component {
             Node / Express / MongoDB / Mongoose / PostgreSQL / Sequelize / Artillery / Loader.io / New Relic / NGINX / AWS / npm / Ubuntu Server
             </div>
             <div className="application-body">
-              <div className="carousel-container">
-                <AnthropologieCarousel />
-              </div>
+              <AnthropologieCarousel />
               <ul className="feature-list">
                 <li>Benchmarked and optimized SQL and NoSQL databases to produce querying times less than 6ms using B-tree indexing and tuning</li>
                 <li>Horizontally-scaled to five AWS t2.micro EC2 instances with NGINX load-balancer using least connections technique to increase throughput 3.4x under conditions of latency less than 70ms and an error rate of 0.0%</li>
@@ -87,9 +83,7 @@ export default class Applications extends Component {
             HTML5 / CSS3 / jQuery
             </div>
             <div className="application-body">
-              <div className="carousel-container">
-                <MemoryGameCarousel />
-              </div>
+              <MemoryGameCarousel />
               <ul className="undecorated feature-list">
                 <li>Implemented a move counter, timer, a restart button, a star rating that decreases as a specific number of moves are reached, and a popup scoreboard that displays game statistics and congratulates the player for completing the game</li>
               </ul>

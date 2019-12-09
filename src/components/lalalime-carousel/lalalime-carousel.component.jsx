@@ -10,7 +10,7 @@ export default class LalalimeCarousel extends Component {
         <div className="carousel-container">
           <CarouselProvider
             naturalSlideWidth={80}
-            naturalSlideHeight={50}
+            naturalSlideHeight={51}
             totalSlides={3}
           >
             <Slider className="carousel">
