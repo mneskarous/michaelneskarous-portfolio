@@ -54,6 +54,7 @@ $screen-md-min: 830px;
     padding: 30px;
     margin-left: 30px;
     width: 80%;
+    height: auto;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -62,6 +63,7 @@ $screen-md-min: 830px;
 
     img {
       width: 100%;
+      height: auto;
     }
 
   }
