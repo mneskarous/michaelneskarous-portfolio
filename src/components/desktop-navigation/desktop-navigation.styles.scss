@@ -74,6 +74,7 @@ $screen-md-min: 830px;
     display: inline-flex;
     
     a {
+
       @include md {
         margin: 20px 5px;
       }
@@ -89,6 +90,5 @@ $screen-md-min: 830px;
     }
 
   }
-
   
 }

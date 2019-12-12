@@ -41,11 +41,13 @@ $screen-md-min: 830px;
     @include sm {
       margin: 10px 60px;
     }
+
   }
 
   .answer-container {
     border: 1px solid $light-grey;
     padding: 20px 30px;
+    
     .answer {
       text-align: center;
       color: $light-grey;

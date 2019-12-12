@@ -91,6 +91,7 @@ $screen-md-min: 830px;
     display: inline-flex;
     
     a {
+      
       @include sm {
         margin: 20px 10px;
       }

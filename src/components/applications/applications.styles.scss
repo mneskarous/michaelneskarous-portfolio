@@ -59,6 +59,7 @@ $screen-md-min: 830px;
     color: $light-grey;
     line-height: 1.5em;
     padding: 25px 50px;
+
     @include sm {
       padding: 25px 10px;
     }
@@ -84,12 +85,15 @@ $screen-md-min: 830px;
         @include sm {
           margin-bottom: 20px;
         }
+
       }
 
       .extra-margin {
+
         @include sm {
           margin-bottom: -20px;
         }
+
       }
 
       .application-body {
@@ -126,7 +130,7 @@ $screen-md-min: 830px;
           margin-top: 0px;
         }
 
-        .undecorated{
+        .undecorated {
           list-style-type: none;
         }
 
