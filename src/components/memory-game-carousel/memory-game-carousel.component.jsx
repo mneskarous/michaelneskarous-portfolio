@@ -7,19 +7,19 @@ import '../applications/carousel.styles.scss';
 const MemoryGameCarousel = () => (
   <div className="carousel-container">
     <CarouselProvider
-      naturalSlideWidth={100}
-      naturalSlideHeight={109}
+      naturalSlideWidth={560}
+      naturalSlideHeight={315}
       totalSlides={3}
     >
       <Slider className="portrait-aspect carousel">
-        <Slide className="image-container" index={0}>
-          <img className="image" src='./images/memory-game/memory-game-demo-1.gif' alt="Memory Game demo 1"/>
+        <Slide className="video-container" index={0}>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/4d3UfePRLIo" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen title="Memory Game Demo 3"></iframe>
         </Slide>
-        <Slide className="image-container" index={1}>
-          <img className="image" src='./images/memory-game/memory-game-demo-2.gif' alt="Memory Game demo 2" />
+        <Slide className="video-container" index={1}>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/xtMT100ui9M" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen title="Memory Game Demo 2"></iframe>
         </Slide>
-        <Slide className="image-container" index={2}>
-          <img className="image" src='./images/memory-game/memory-game-demo-3.gif' alt="Memory Game demo 3" />
+        <Slide className="video-container" index={2}>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lKco4cbUewE" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen title="Memory Game Demo 3"></iframe>
         </Slide>
       </Slider>
       <ButtonBack className="prev arrow">&#60;</ButtonBack>

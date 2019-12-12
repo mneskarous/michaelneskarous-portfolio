@@ -2,7 +2,6 @@ import React from 'react';
 import AnthropologieCarousel from '../anthropologie-carousel/anthropologie-carousel.component';
 import LalalimeCarousel from '../lalalime-carousel/lalalime-carousel.component';
 import MemoryGameCarousel from '../memory-game-carousel/memory-game-carousel.component';
-import FitnessTrackerCarousel from '../fitness-tracker-carousel/fitness-tracker-carousel.component';
 
 import './applications.styles.scss';
 
@@ -20,8 +19,10 @@ const Applications = () => (
           HTML5 / CSS3 / React / RESTful API / Node / Express / MongoDB / Mongoose / Git / npm / webpack
         </div>
         <div className="application-body">
-          <FitnessTrackerCarousel />
-          <ul className="feature-list">
+          <div className="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-HNstlP4kfE" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen title="Fitness Tracker MVP Demo"></iframe>
+          </div>
+          <ul className="no-margin feature-list">
             <li>Contributed to the planning of functionality in addition to component structure and visual style of application</li>
             <li>Constructed database schema to persist data</li>
             <li>Utilized React State and conditional rendering to allow users to input and view their fitness data</li>
@@ -48,7 +49,7 @@ const Applications = () => (
         <div className="application-title">
           Anthropologie Main Product Section: System design mock-up of the Anthropologie Main Product Section
         </div>
-        <div className="application-tech">
+        <div className="extra-margin application-tech">
         Node / Express / MongoDB / Mongoose / PostgreSQL / Sequelize / Artillery / Loader.io / New Relic / NGINX / AWS / npm / Ubuntu Server
         </div>
         <div className="application-body">

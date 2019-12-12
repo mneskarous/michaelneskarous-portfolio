@@ -7,19 +7,19 @@ import '../applications/carousel.styles.scss';
 const LalalimeCarousel = () => (
   <div className="carousel-container">
     <CarouselProvider
-      naturalSlideWidth={80}
-      naturalSlideHeight={51}
+      naturalSlideWidth={560}
+      naturalSlideHeight={315}
       totalSlides={3}
     >
       <Slider className="carousel">
-        <Slide className="image-container" index={0}>
-          <img className="image" src='./images/lalalime/FEC-demo-filter.gif' alt="Lalalime filter demo"/>
+        <Slide className="video-container" index={0}>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/yhEQG5etWNo" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen title="Lalalime Filter Demo"></iframe>
         </Slide>
-        <Slide className="image-container" index={1}>
-          <img className="image" src='./images/lalalime/FEC-demo-popups.gif' alt="Lalalime popups demo" />
+        <Slide className="video-container" index={1}>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/j8S6xaIPl3M" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen title="Lalalime Sort Demo"></iframe>
         </Slide>
-        <Slide className="image-container"index={2}>
-          <img className="image" src='./images/lalalime/FEC-Demo-Sort.gif' alt=" Lalalime sort demo" />
+        <Slide className="video-container"index={2}>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Oz7oDnI-UXw" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen title="Lalalime Popups Demo"></iframe>
         </Slide>
       </Slider>
       <ButtonBack className="prev arrow">&#60;</ButtonBack>
