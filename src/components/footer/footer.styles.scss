@@ -5,8 +5,78 @@ $medium-dark-blue: #0E307E;
 $dark-blue: #082463;
 $light-grey: #E0E0E0;
 
+$screen-md-max: 650px;
+$screen-md-min: 522px;
+
+@mixin sm {
+  @media (max-width: #{$screen-md-min - 1}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  } 
+  @media (max-width: #{$screen-md-max}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$screen-md-max + 1}) {
+      @content;
+  }
+}
+
 .footer {
   background: $dark-blue;
   color: $light-grey;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  @include sm {
+    // display: inline;
+  }
+
+  .copyright {
+
+    @include md {
+      max-width: 240px;
+    }
+
+    @include lg {
+      max-width: 400px;
+    }
+
+  }
+
+  .footer-image-links {
+
+    @include sm {
+      width: 170px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+    
+    a {
+
+      img {
+        margin: 0 15px;
+        width: 50px;
+        height: auto;
+
+        @include sm {
+          width: 40px;
+        }
+
+      }
+
+    }
+
+  }
+
 }
