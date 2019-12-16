@@ -36,10 +36,6 @@ $screen-md-min: 522px;
   display: flex;
   justify-content: space-between;
 
-  @include sm {
-    // display: inline;
-  }
-
   .copyright {
 
     @include md {
