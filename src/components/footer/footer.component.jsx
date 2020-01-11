@@ -5,7 +5,7 @@ import './footer.styles.scss';
 const Footer = () => (
   <div className="footer">
     <div className="copyright">
-    	&copy; 2019 Design & build by Michael Eskarous
+    	&copy; 2020 Design & build by Michael Eskarous
     </div>
     <div className="footer-image-links">
       <a href="https://www.linkedin.com/in/michaelneskarous/">
