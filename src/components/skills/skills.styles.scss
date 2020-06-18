@@ -76,12 +76,13 @@ $screen-md-min: 830px;
       grid-gap: 20px;
       background: $dark-blue;
       margin: 0 auto;
-      padding: 0 30px 30px 30px;
+      padding-bottom: 30px;
     
       @include sm {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
         background: $dark-blue;
       }
 
