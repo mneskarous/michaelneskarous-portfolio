@@ -30,8 +30,10 @@ $screen-md-min: 830px;
 }
 
 .skill-container {
-  text-align: center;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 
   img {
     width: 75px;
@@ -47,6 +49,7 @@ $screen-md-min: 830px;
   .answer-container {
     border: 1px solid $light-grey;
     padding: 20px 30px;
+    margin-top: 10px;
     
     .answer {
       text-align: center;
